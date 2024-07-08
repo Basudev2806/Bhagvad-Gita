@@ -1,5 +1,23 @@
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent; /* Adjust colors as needed */
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Adjust thumb color */
+}
+
 .App {
   text-align: center;
+  background: #a19b9b;
+}
+
+.night-mode .App {
+  background-color: #674b3d;
 }
 
 .App-logo {
@@ -26,6 +44,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-footer {
+  text-align: center;
+}
+
+.night-mode .App-footer p {
+  color: white;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,145 @@
+.chapter-list-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.chapter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chapter-item {
+  margin-bottom: 10px;
+}
+
+.chapter-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.chapter-link:hover {
+  color: #fd7e3e;
+}
+
+.chapter-box {
+  border: 2px solid #fd7e3e;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+  background: #fbefe9;
+}
+
+.chapter-details {
+  border: 2px solid #fd7e3e;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fbefe9;
+}
+
+
+.chapter-number p {
+  font-size: 1.2rem;
+}
+
+.chapter-name {
+  flex: 1;
+  font-weight: bold; /* Make chapter name bold */
+}
+
+.chapter-name-meaning {
+  flex: 1;
+  font-style: italic; /* Italicize chapter name meaning */
+}
+
+.arrow-icon {
+  color: #fd7e3e; /* Arrow icon color */
+  margin-right: 20px;
+}
+
+.expanded-content {
+  display: none;
+}
+
+.expanded-content.visible {
+  display: block;
+  margin-top: 10px;
+}
+
+.chapter-details p {
+  margin: 5px 0;
+  padding: 15px;
+  color: #fd7e3e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.see-all-link {
+  color: #fd7e3e;
+  cursor: pointer;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.night-mode .chapter-box {
+  border: 2px solid #cdafa0;
+}
+
+.night-mode .arrow-icon {
+  color: #cdafa0;
+}
+
+.night-mode .chapter-link:hover {
+  color: #d1a087;
+}
+
+.night-mode .chapter-details p {
+    color: #674b3d;
+}
+
+.night-mode .see-all-link {
+    color: #674b3d;
+}
+
+.night-mode .chapter-box {
+  background: #73625a;
+}
+
+.night-mode .chapter-details {
+  background: #674b3d;
+}
+
+.night-mode .chapter-number, .night-mode .chapter-name, .night-mode .chapter-name-meaning, .night-mode .chapter-list-container h2 {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .chapter-list-container {
+    max-width: 320px;
+  }
+
+  .chapter-box {
+    flex-direction: row;
+    text-align: start;
+    padding: 10px;
+  }
+
+  .chapter-name,
+  .chapter-name-meaning {
+    padding-left: 0;
+  }
+
+  .arrow-icon {
+    margin-top: 10px; /* Adds space between text and arrow in mobile view */
+  }
+}

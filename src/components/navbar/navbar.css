@@ -1,0 +1,133 @@
+.navbar {
+  background-color: #a19b9b; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 0;
+}
+
+.navbar-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Padding adjusted for smaller screens */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff; /* Logo text color */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.mode-icons {
+  margin-right: 10px; /* Margin between mode icon and menu icon */
+}
+
+.mode-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 20px; /* Margin between navbar items */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff; /* Navbar item text color */
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #f0f0f0; /* Navbar item text color on hover */
+}
+
+.mode-icons {
+  order: 1;
+  margin-left: 16px;
+}
+
+.night-mode .navbar {
+  background-color: #674b3d;
+}
+
+.night-mode .navbar-container {
+  background-color: #674b3d; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+.night-mode .navbar-logo {
+  color: #fff; /* Light text color */
+}
+
+.night-mode .navbar-link {
+  color: #fff; /* Light text color */
+}
+
+.night-mode .mode-icon {
+  color: #fff; /* Light mode icon color */
+}
+
+.night-mode .navbar-link:hover {
+  color: #ddd; /* Light text color on navbar item hover */
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on smaller screens */
+  }
+
+  .navbar-container {
+    padding: 0 16px; /* Adjusted padding for smaller screens */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 55px; /* Distance from top */
+    left: 0;
+    width: 100%;
+    background-color: #A19B9B; /* Background color for mobile menu */
+    padding: 10px 0;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-item {
+    margin: 7px 0; /* Margin for each navbar item in mobile view */
+    text-align: center;
+    width: 100%;
+  }
+
+  .mode-icons {
+    order: 0;
+    margin-right: 10px;
+  }
+
+  .night-mode .navbar-menu {
+    background-color: #675851; /* Dark background color for mobile menu */
+  }
+}
